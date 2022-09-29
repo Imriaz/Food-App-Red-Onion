@@ -1,0 +1,138 @@
+.cart {
+  margin: auto;
+  height: 100vh;
+  background-position-x: 40% !important;
+  background-position-y: 40% !important;
+  background-size: cover !important;
+}
+.cart__row {
+  padding: 30px 0;
+  width: 100%;
+}
+.cart__title {
+  color: #dc3545;
+  text-align: center;
+  margin: 10px 0px;
+}
+.cart__table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 24px 10px rgba(0, 0, 0, 0.1);
+}
+.cart__table__header, .cart__table__footer {
+  border-bottom: 1px solid #a29c9c;
+  padding: 10px 15px;
+  color: #dc3545;
+  text-align: center;
+  font-weight: 700;
+}
+.cart__table__field {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.63);
+  text-align: center;
+  padding: 5px 15px;
+}
+.cart__table__field__title {
+  max-width: 160px;
+  margin: auto;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.cart__table__deleteButton {
+  padding: 5px;
+  border: none;
+  color: white;
+  background-color: #dc3545;
+  border-radius: 5px;
+  width: 50px;
+  margin-left: 5px;
+}
+.cart__checkout {
+  margin: auto;
+  text-align: center;
+}
+.cart__checkoutButton {
+  background-color: crimson;
+  color: #fff;
+  padding: 8px 15px;
+  border: 0;
+  border-radius: 20px;
+  font-size: 1rem;
+  margin-top: 50px;
+}
+.cart__nodata {
+  margin: 50px;
+  text-align: center;
+  color: #dc3545;
+  font-weight: bold;
+}
+
+.cart__productlist__row__table__row__button__delete__modal {
+  position: absolute;
+  top: 40%;
+  left: 0 !important;
+  z-index: 1;
+  width: 50%;
+  height: 150px;
+  box-shadow: 0 0 0 1500px rgba(0, 0, 0, 0.1);
+  background-color: #fefefe;
+  border: 1px solid #888;
+  right: 0 !important;
+  margin: auto;
+  text-align: center;
+  min-width: 300px;
+}
+
+@media screen and (max-width: 768px) {
+  .cart__checkout {
+    margin: auto;
+  }
+}
+@media screen and (max-width: 580px) {
+  .cart__table__field {
+    padding: 5px;
+  }
+  .cart__table {
+    font-size: 12px;
+    width: 100%;
+  }
+  .cart__table__deleteButton {
+    width: auto;
+    font-size: 12px;
+  }
+  .cart__table__header,
+.cart__table__footer {
+    padding: 10px 5px;
+  }
+}
+@media screen and (max-width: 375px) {
+  .cart__table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    margin-left: 0;
+  }
+  .cart__table__field__title {
+    max-width: 65px;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+@media screen and (max-width: 360px) {
+  .cart__table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+  }
+  .cart__table__field__title {
+    max-width: 60px;
+    margin: auto;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}/*# sourceMappingURL=style.css.map */

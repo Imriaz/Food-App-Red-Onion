@@ -1,0 +1,293 @@
+/* Products Details Section Start*/
+#itemQuantity {
+  text-align: center;
+  width: 35px;
+  font-size: 18px;
+  font-weight: 800;
+  margin-inline: 2px;
+  border: none;
+  outline: none;
+}
+.productsDetails {
+  max-width: 1110px;
+  margin: auto;
+  margin-top: 50px;
+  min-height: 100vh;
+
+  &__card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 40px;
+    min-width: 300px;
+    margin: auto;
+    padding: 5px 8px 10px 8px;
+    text-align: center;
+    &__image {
+      height: 430px;
+      width: 500px;
+      // margin: 5px;
+      border-radius: 50%;
+      &__main {
+        margin: auto;
+        // width: 100%;
+        max-width: 540px;
+        display: flex;
+        align-items: center;
+      }
+      &__main--selected {
+        height: 300px;
+        width: 300px;
+        border-radius: 50%;
+        margin: 0 auto;
+        border: 2px solid cadetblue;
+      }
+      &__sub {
+        // width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-wrap: wrap;
+        padding-top: 10px;
+      }
+      &__sub img {
+        width: 100px;
+        height: 100px;
+        margin: 5px 0;
+        display: block;
+      }
+    }
+    &__body {
+      text-align: left;
+      margin-top: 50px;
+    }
+    &__body__title {
+      color: #005bc7;
+    }
+    &__body__title h3 {
+      font-weight: 400;
+      font-size: 2rem;
+    }
+    &__body__description {
+      color: #808080;
+    }
+    &__body__price {
+      display: flex;
+      &__quantity {
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        height: 35px;
+        width: 22%;
+        margin-top: 5px;
+        margin-left: 30px;
+        border-radius: 25px;
+        border: 1px solid black;
+        &__error {
+          color: red;
+          margin: 10px;            
+          font-size: 14px;
+          display: block;       
+        }
+      }
+    }
+    &__body__cart {
+      margin-top: 20px;
+      height: 35px;
+      width: 150px;
+      background-color: #dc3545;
+      border: none;
+      border-radius: 25px;
+      font-size: 16px;
+      color: #fff;
+      padding-inline: 10px;
+    }
+    &__body__price__quantity__plus {
+      background: transparent;
+      border: none;
+      color: #dc3545;
+      padding: 0px 8px;
+    }
+    &__body__price__quantity__minus {
+      background: transparent;
+      border: none;
+      padding: 0px 8px;
+    }
+    &__body h2 {
+      font-size: 2rem;
+      font-weight: 500;
+    }
+  }
+  &__endTitle {
+    text-align: center;
+    margin-inline: 40px;
+    padding-top: 20px;
+  }
+}
+
+// tablet-version
+
+@media screen and (max-width: 980px) {
+  .productsDetails {
+    margin-top: 25px;
+    &__card {
+      width: 80%;
+      grid-gap: 30px;
+    }
+    &__card__image {
+      height: 250px;
+      width: 300px;
+      border-radius: 50%;
+      margin-top: 25px;
+    }
+    &__card__body__title h3 {
+      font-weight: 400;
+      font-size: 1.5rem;
+    }
+    &__card__body h2 {
+      font-size: 1.5rem;
+      font-weight: 500;
+    }
+    &__card__body__price__quantity {
+      display: flex;
+      height: 25px;
+      width: 25%;
+      margin-top: 5px;
+      border-radius: 25px;
+      border: 1px solid black;
+      min-width: 85px;
+    }
+    &__card__body__price__quantity h1 {
+      font-size: 1rem;
+    }
+    &__endTitle {
+      margin-top: 50px;
+    }
+  }
+  .productsDetails__card__body__price__quantity__error{
+    margin: 5px 10px;
+  }
+  .productsDetails__card__body__price__quantity__minus,
+  .productsDetails__card__body__price__quantity__plus {
+    padding: 4px;
+  }
+  #itemQuantity {
+    width: 22px;
+    font-size: 18px;
+    font-weight: 600;
+    margin-inline: 0px;
+    font-size: 14px;
+  }
+}
+
+//mobile-version
+
+@media screen and (max-width: 768px) {
+  .productsDetails {
+    &__card {
+      display: grid;
+      width: 50%;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      min-width: 300px;
+      margin: auto;
+      padding: 5px 8px 30px 8px;
+      text-align: center;
+      &__body {
+        text-align: center;
+      }
+      &__body__price {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        &__quantity {
+          margin: 0;
+          display: flex;
+          height: 25px;
+          width: 22%;
+          border-radius: 25px;
+          border: 1px solid black;
+        }
+      }
+    }
+    &__card__image {
+      border-radius: 50%;
+      margin-top: 25px;
+      margin: auto;
+    }
+    &__card__body__title h3 {
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    &__card__body h2 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    &__card__body__price {
+      margin-top: 40px;
+    }
+    &__card__body__price__quantity {
+      width: 27%;
+    }
+    &__card__body__price__quantity h1 {
+      font-size: 1rem;
+    }
+    &__endTitle {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .productsDetails {
+    &__card {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+      min-width: 300px;
+      margin: auto;
+      padding: 5px 8px 30px 8px;
+      text-align: center;
+      &__body {
+        text-align: center;
+      }
+      &__body__price {
+        display: flex;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+        &__quantity {
+          margin: 0;
+          display: flex;
+          height: 25px;
+          width: 26%;
+          border-radius: 25px;
+          border: 1px solid black;
+        }
+      }
+    }
+    &__card__image {
+      width: 200px;
+      border-radius: 50%;
+      margin: 0;
+      margin-top: 25px;
+    }
+    &__card__body__title h3 {
+      font-weight: 400;
+      font-size: 1rem;
+    }
+    &__card__body h2 {
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    &__card__body__price__quantity h1 {
+      font-size: 1rem;
+    }
+    &__endTitle {
+      text-align: center;
+      margin-top: 50px;
+      margin-bottom: 40px;
+    }
+  }
+}
